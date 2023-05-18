@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <title>Pacific</title>
+</head>
+
+<body>
+    <div class="wrapper"> <!-- This is the search results page -->
+        <!-- Header Start -->
+        <header>
+            <div class="navbar-wrap">
+                <input type="checkbox" class="toggle-btn" onclick="toggleClass()">
+                <button type="buttton" class="menu-btn">
+                    <img src="images/menu-icon.svg" class="menu-img" alt="">
+                    <img src="images/close-icon.svg" class="close-img" alt="">
+                </button>
+                <div class="navbar-nav">
+                    <ul class="navbar">
+                        <li>
+                            <a href="#">FURNITURE</a>
+                            <ul class="submenu">
+                                <li><a href="#">Sofas</a></li>
+                                <li><a href="#">Dining</a></li>
+                                <li><a href="#">Chairs</a></li>
+                                <li><a href="#">Living</a></li>
+                                <li><a href="#">Outdoor</a></li>
+                                <li><a href="#">Antiques</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">OFFICE</a>
+                            <ul class="submenu">
+                                <li><a href="#">Conference/Events</a></li>
+                                <li><a href="#">Desks</a></li>
+                                <li><a href="#">Sofas</a></li>
+                                <li><a href="#">Office Chairs</a></li>
+                                <li><a href="#">Tables</a></li>
+                                <li><a href="#">Storage</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">BEDDING</a>
+                            <ul class="submenu">
+                                <li><a href="#">Mattresses & Bases</a></li>
+                                <li><a href="#">Beds</a></li>
+                                <li><a href="#">Kids Beds</a></li>
+                                <li><a href="#">Suits</a></li>
+                                <li><a href="#">Bedroom Furniture</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">HOMEWARES</a>
+                            <ul class="submenu">
+                                <li><a href="#">Cushions</a></li>
+                                <li><a href="#">Bedroom</a></li>
+                                <li><a href="#">Rugs</a></li>
+                                <li><a href="#">Living Room</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SALE</a></li>
+                        <li><a href="#">NEW ARRIVALS</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="user-link">
+                    <img src="images/user-icon.svg" alt="">
+                </a>
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <ul class="links-list">
+                    <li><a href="#"><img src="images/search-icon.svg" alt=""></a></li>
+                    <li><a href="#"><img src="images/heart-icon.svg" alt=""></a></li>
+                    <li><a href="#" class="cart-link"><img src="images/cart-icon.svg" alt=""><span>1</span></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Content Start -->
+        <div class="content">
+            <section class="search-result-wrap">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sofas</a></li>
+                </ol>
+                <div class="search-banner">
+                    <img src="images/living_design_1.png" alt="">
+                    <span>Sofas</span>
+                </div>
+                <div class="search-links-wrap"> <!-- categories -->
+                    <ul class="search-links">
+                        <li><a href="#">LOUNGE CHAIRS</a></li>
+                        <li><a href="#">FABRIC</a></li>
+                        <li><a href="#">LEATHER</a></li>
+                        <li><a href="#">LIFT CHAIRS</a></li>
+                        <li><a href="#">RECLINERS</a></li>
+                        <li><a href="#">SOFA BEDS</a></li>
+                    </ul>
+                </div>
+                <div class="search-filter-wrap"> <!-- filter icon -->
+                    <div class="custom-select">
+                        <img src="images/filter-icon.svg" alt="">
+                        <select name="" id="">
+                            <option value="" selected disabled>FILTER BY :</option>
+                            <option value="">FILTER 1</option>
+                            <option value="">FILTER 2</option>
+                            <option value="">FILTER 3</option>
+                        </select>
+                    </div>
+                    <ul class="page-link">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SOFAS</a></li>
+                    </ul>
+                    <div class="custom-select">
+                        <img src="images/sort-icon.svg" alt=""> <!-- sort icon -->
+                        <select name="" id="">
+                            <option value="" selected disabled>Sort BY :</option>
+                            <option value="">Asc</option>
+                            <option value="">Des</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-category-wrap"> <!-- search results start, total 16 sofa items -->
+                    <div class="search-product-row">
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_1.png" alt="">
+                                    <img src="images/sofa_img_1-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #8B6846;"></button></li>
+                                        <li><button type="button" style="background: #3E3E3E;"></button></li>
+                                        <li><button type="button" style="background: #7C6A62;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Hugo 3 Seater Lounge</h5>
+                                <p>$1,299</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_7.png" alt="">
+                                    <img src="images/sofa_img_2-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #E3E0DB;"></button></li>
+                                        <li><button type="button" style="background: #858282;"></button></li>
+                                        <li><button type="button" style="background: #3E3E3E;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Mossy 2 Seater Sofa</h5>
+                                <p>$1,399</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_2.png" alt="">
+                                    <img src="images/sofa_img_3-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #E3E0DB;"></button></li>
+                                        <li><button type="button" style="background: #A8A49D;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Victor 3 Seater Sofa</h5>
+                                <p>$1,299</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_8.png" alt="">
+                                    <img src="images/sofa_img_4-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #A0836F;"></button></li>
+                                        <li><button type="button" style="background: #4B453F;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Mateo 2 Seater Chair</h5>
+                                <p>$1,599</p>
+                            </div>
+                        </div>
+
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_9.png" alt="">
+                                    <img src="images/sofa_img_5-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #3F404C;"></button></li>
+                                        <li><button type="button" style="background: #DBDAD8;"></button></li>
+                                        <li><button type="button" style="background: #A99378;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Dune 3 Seater Sofa</h5>
+                                <p>$1,899</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_10.png" alt="">
+                                    <img src="images/sofa_img_6-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #B18970;"></button></li>
+                                        <li><button type="button" style="background: #3E3E3E;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Soren Corner Sofa</h5>
+                                <p>$2,199</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_11.png" alt="">
+                                    <img src="images/sofa_img_7-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #E5E1DC;"></button></li>
+                                        <li><button type="button" style="background: #A8A49D;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Jamesport 2 Seater Sofa</h5>
+                                <p>$1,399</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_3.png" alt="">
+                                    <img src="images/sofa_img_8-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #E3E0DB;"></button></li>
+                                        <li><button type="button" style="background: #C6B09A;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Felicity Chair</h5>
+                                <p>$1,599</p>
+                            </div>
+                        </div>
+
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_12.png" alt="">
+                                    <img src="images/sofa_img_9-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #625B5B;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Collaroy Scatter Back Sofa</h5>
+                                <p>$1,899</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_13.png" alt="">
+                                    <img src="images/sofa_img_10-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #918985;"></button></li>
+                                        <li><button type="button" style="background: #96A0B2;"></button></li>
+                                        <li><button type="button" style="background: #E5D8B7;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Adele Curved Lounge</h5>
+                                <p>$1,599</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_14.png" alt="">
+                                    <img src="images/sofa_img_11-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #282826;"></button></li>
+                                        <li><button type="button" style="background: #C6B09A;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Christo 2 Seater Sofa</h5>
+                                <p>$1,499</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_5.png" alt="">
+                                    <img src="images/sofa_img_12-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #5B584E;"></button></li>
+                                        <li><button type="button" style="background: #DBDAD8;"></button></li>
+                                        <li><button type="button" style="background: #A99378;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Mateo Corner Sofa</h5>
+                                <p>$1,899</p>
+                            </div>
+                        </div>
+
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_6.png" alt="">
+                                    <img src="images/sofa_img_13-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #7C8692;"></button></li>
+                                        <li><button type="button" style="background: #858282;"></button></li>
+                                        <li><button type="button" style="background: #FFFFFF;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Kobe 2 Seater Sofa</h5>
+                                <p>$1,399</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_15.png" alt="">
+                                    <img src="images/sofa_img_14-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #E3E0DB;"></button></li>
+                                        <li><button type="button" style="background: #A8A49D;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Avery Sofa</h5>
+                                <p>$1,799</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_16.png" alt="">
+                                    <img src="images/sofa_img_15-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #C7BEAF; opacity: 0.19;"></button>
+                                        </li>
+                                        <li><button type="button" style="background: #C6B09A;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Archer Corner Sofa</h5>
+                                <p>$1,599</p>
+                            </div>
+                        </div>
+                        <div class="search-product-col">
+                            <div class="product-card hover-img-card">
+                                <div class="product-img-wrap">
+                                    <button type="button" class="cart-btn">
+                                        <img src="images/cart-icon.svg" alt="">
+                                    </button>
+                                    <button type="button" class="favr-btn">
+                                        <img src="images/heart-icon-black.svg" alt="">
+                                    </button>
+                                    <img src="images/sofa_img_17.png" alt="">
+                                    <img src="images/sofa_img_16-hover.png" class="hover-img" alt="">
+                                    <ul class="choose-clr">
+                                        <li><button type="button" style="background: #E3E0DB;"></button></li>
+                                    </ul>
+                                </div>
+                                <h5>Cohen 2 Seater Sofa</h5>
+                                <p>$1,599</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stay-in-touch-wrap"> <!--stay in touch form-->
+                <div class="stay-in-touch-content">
+                    <span>PACIFIC F&b</span>
+                    <h2>STAY IN TOUCH</h2>
+                    <p>Sign up to the Pacific F&B Club for the latest design news, styling inspirations, events and
+                        offers.</p>
+                    <form action="">
+                        <label for="">Enter Email:</label>
+                        <input type="email" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <!-- Content End -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-row">
+                    <div class="footer-col footer-logo-col">
+                        <a href="#" class="footer-logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>About</h5>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Stores</a></li>
+                                <li><a href="#">Product Information</a></li>
+                                <li><a href="#">Catalogue</a></li>
+                                <li><a href="#">Current TV Ads</a></li>
+                                <li><a href="#">Commercial Division</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>Customer Service</h5>
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h5>Extras</h5>
+                            <ul>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>Extras</h5>
+                            <ul>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-social-links">
+                            <a href="#" class="footer-logo">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_youtube.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_instagram.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | Copyright &copy; <a
+                        href="#">Pacific F&B</a> 2023. All Rights Reserved.</p>
+                <p>Design by Xiaoyue Liu, Li Yee Goh</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleClass() {
+            document.querySelector('body').classList.toggle('fixed');
+        }
+    </script>
+
+</body>
+
+</html>
