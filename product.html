@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <title>Pacific</title>
+</head>
+
+<!-- This is the product page for Hugo 3 Seater Lounge -->
+
+<body>
+    <div class="wrapper">
+        <!-- Header Start -->
+        <header>
+            <!-- Navigation Bar -->
+            <div class="navbar-wrap">
+                <input type="checkbox" class="toggle-btn" onclick="toggleClass()">
+                <button type="buttton" class="menu-btn">
+                    <img src="images/menu-icon.svg" class="menu-img" alt="">
+                    <img src="images/close-icon.svg" class="close-img" alt="">
+                </button>
+                <div class="navbar-nav">
+                    <ul class="navbar">
+                        <li>
+                            <a href="#">FURNITURE</a>
+                            <ul class="submenu">
+                                <li><a href="#">Sofas</a></li>
+                                <li><a href="#">Dining</a></li>
+                                <li><a href="#">Chairs</a></li>
+                                <li><a href="#">Living</a></li>
+                                <li><a href="#">Outdoor</a></li>
+                                <li><a href="#">Antiques</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">OFFICE</a>
+                            <ul class="submenu">
+                                <li><a href="#">Conference/Events</a></li>
+                                <li><a href="#">Desks</a></li>
+                                <li><a href="#">Sofas</a></li>
+                                <li><a href="#">Office Chairs</a></li>
+                                <li><a href="#">Tables</a></li>
+                                <li><a href="#">Storage</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">BEDDING</a>
+                            <ul class="submenu">
+                                <li><a href="#">Mattresses & Bases</a></li>
+                                <li><a href="#">Beds</a></li>
+                                <li><a href="#">Kids Beds</a></li>
+                                <li><a href="#">Suits</a></li>
+                                <li><a href="#">Bedroom Furniture</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">HOMEWARES</a>
+                            <ul class="submenu">
+                                <li><a href="#">Cushions</a></li>
+                                <li><a href="#">Bedroom</a></li>
+                                <li><a href="#">Rugs</a></li>
+                                <li><a href="#">Living Room</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SALE</a></li>
+                        <li><a href="#">NEW ARRIVALS</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="user-link">
+                    <img src="images/user-icon.svg" alt="">
+                </a>
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <ul class="links-list">
+                    <li><a href="#"><img src="images/search-icon.svg" alt=""></a></li>
+                    <li><a href="#"><img src="images/heart-icon.svg" alt=""></a></li>
+                    <li><a href="#" class="cart-link"><img src="images/cart-icon.svg" alt=""><span>1</span></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Content Start -->
+        <div class="content">
+            <section class="product-main-wrap">
+                <img src="images/product-main-img.png" class="product-img" alt="">
+
+                <div class="product-description-wrap">
+                    <div class="product-img-slider">
+                        <div id="slider-img1" class="tabcontent" style="display: block">
+                            <img src="images/product-img1.png" alt="">
+                        </div>
+                        <div id="slider-img2" class="tabcontent">
+                            <img src="images/product-img2.png" alt="">
+                        </div>
+                        <div id="slider-img3" class="tabcontent">
+                            <img src="images/product-img3.png" alt="">
+                        </div>
+                        <div id="slider-img4" class="tabcontent">
+                            <img src="images/product-img4.png" alt="">
+                        </div>
+                        <div id="slider-img5" class="tabcontent">
+                            <img src="images/product-img5.png" alt="">
+                        </div>
+                        <div id="slider-img6" class="tabcontent">
+                            <img src="images/product-img6.png" alt="">
+                        </div>
+                        <div id="slider-img7" class="tabcontent">
+                            <img src="images/product-img7.png" alt="">
+                        </div>
+                        <div id="slider-img8" class="tabcontent">
+                            <img src="images/product-img8.png" alt="">
+                        </div>
+
+                        <div class="tab">
+                            <button class="tablinks active" onclick="openCity(event, 'slider-img1')">
+                                <img src="images/product-img1.png" alt="">
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'slider-img2')">
+                                <img src="images/product-img2.png" alt="">
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'slider-img3')">
+                                <img src="images/product-img3.png" alt="">
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'slider-img4')">
+                                <img src="images/product-img4.png" alt="">
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'slider-img5')">
+                                <img src="images/product-img5.png" alt="">
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'slider-img6')">
+                                <img src="images/product-img6.png" alt="">
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'slider-img7')">
+                                <img src="images/product-img7.png" alt="">
+                            </button>
+                            <button class="tablinks" onclick="openCity(event, 'slider-img8')">
+                                <img src="images/product-img8.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-description">
+                        <div class="product-heading">
+                            <h2>Hugo 3 Seater Lounge</h2>
+                            <ul>
+                                <li><button type="button"><img src="images/exchange-icon.svg" alt=""></button></button>
+                                </li>
+                                <li><button type="button"><img src="images/heart-icon-black.svg" alt=""></button></li>
+                            </ul>
+                        </div>
+                        <h4>SAND LEATHER.</h4>
+                        <h4 class="price">$1,299</h4>
+                        <p>Modern, sleek sofa with hand-finished South American leather.</p>
+
+                        <div class="color-variation">
+                            <span>3 VARIATIONS AVAILABLE</span>
+                            <h6>COLOUR:</h6>
+                            <ul class="choose-color">
+                                <li>
+                                    <input type="radio" id="color1" name="color" checked>
+                                    <label for="color1" style="background: #8B6846;"></label></li>
+                                <li>
+                                    <input type="radio" id="color2" name="color">
+                                    <label for="color2" style="background: #7C6A62;"></label></li>
+                                <li>
+                                    <input type="radio" id="color3" name="color">
+                                    <label for="color3" style="background: #3E3E3E;"></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="quantity">
+                            <h6>QUANTITY: </h6>
+                            <div class="quantity-btn">
+                                <button type="button" id="sub" class="minus">
+                                    <img src="images/minus-icon.svg" alt="">
+                                </button>
+                                <input type="number" id="1" value="1" min="1" id="quantity" max="10">
+                                <button type="button" id="add" class="plus">
+                                    <img src="images/plus-icon.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="how-pay">
+                            <li><img src="images/icon-afterpay.svg" alt=""><span>4 PAYMENTS 0F $324.75</span></li>
+                            <li><img src="images/icon-humm.svg" alt=""><span>5 PAYMENTS OF $259.80</span></li>
+                        </ul>
+                        <button class="add-to-card-btn">ADD TO CART</button>
+
+                        <div class="form-group">
+                            <label for="">ESTIMATE FOR DELIVERY:</label>
+                            <input type="text" placeholder="ENTER POSTCODE">
+                        </div>
+                        <hr>
+
+                        <div class="accordion">
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    DETAILS
+                                </div>
+                                <div class="accordion-item-body">
+                                   <div class="accordion-body">
+                                        <p>A modern classic, the Hugo 3 Seater Lounge features clean lines and a low,
+                                            comfortable sit to suit contemporary interiors.</p>
+                                        <p>The sofa is hand-finished with South American leather and the frame is
+                                            constructed from local hardwood, seat cushions are supported by innerspring
+                                            suspension with elastic webbing, cushion inserts are foam and fibre,
+                                            removable feet for maneuverability. </p>
+                                        <p>Leathers from South America are renowned for their toughness, durability and
+                                            high quality. These natural leather hides are finished by hand with
+                                            translucent dyes using a process that can take up to three days for one
+                                            hide. There is no grain correction or pigmentation, ensuring that the magic
+                                            of the natural leather is not compromised.</p>
+                                        <p>The result is a truly authentic and unique hand finished leather of natural
+                                            beauty, that will stand the test of time, and never go out of style.</p>
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    WARRANTY
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>12 months <b>frame</b> warranty</li>
+                                            <li>12 months <b>foam</b> warranty</li>
+                                            <li>12 months <b>leather</b> warranty</li>
+                                            <li>60 months <b>construction</b> warranty</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <div class="accordion-item-header">
+                                    MEASUREMENTS & WEIGHTS
+                                </div>
+                                <div class="accordion-item-body">
+                                    <div class="accordion-body">
+                                        <p>W: 2240mm x D: 920mm x H: 730mm<br>
+                                            Weight: 57kg</p>
+
+                                        <p>SEAT HEIGHT:<br>
+                                            440mm</p>
+
+                                        <p>ARM HEIGHT:<br>
+                                            720mm</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-tabs-links">
+                <ul>
+                    <li><a href="#">Complete look</a></li>
+                    <li><a href="#">SPECIFICATIONS & DIMENSIONS</a></li>
+                    <li><a href="#">RELATED PRODUCTS</a></li>
+                </ul>
+            </section>
+
+            <section class="complete-look-wrap">
+                <div class="complete-look-content">
+                    <h5>Modern, sleek sofa with hand-finished South American leather.</h5>
+                    <ul class="img-list">
+                        <li>
+                            <img src="images/complete-look-1.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/complete-look-2.png" alt="">
+                        </li>
+                        <li>
+                            <img src="images/complete-look-3.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="specification-dimensions-wrap">
+                <div class="specification-dimensions-content">
+                    <h5>SPECIFICATIONS AND DIMENSIONS</h5>
+                    <p>For specific product dimensions, please refer to the diagram.</p>
+                    <ul>
+                        <li>W: 2240mm x D: 920mm x H: 730mm<br>
+                            Weight: 57kg</li>
+                        <li>SEAT HEIGHT:<br>
+                            440mm</li>
+                        <li>ARM HEIGHT:<br>
+                            720mm</li>
+                    </ul>
+                </div>
+                <div class="specification-dimensions-img">
+                    <img src="images/specification-dimenions.png" alt="">
+                </div>
+            </section>
+
+            <section class="related-product-wrap">
+                <h5>RELATED PRODUCTS</h5>
+
+                <div class="related-product-row">
+                    <div class="related-product-col">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <button type="button" class="cart-btn">
+                                    <img src="images/cart-icon-gray.svg" alt="">
+                                </button>
+                                <button type="button" class="favr-btn">
+                                    <img src="images/heart-icon-gray.svg" alt="">
+                                </button>
+                                <img src="images/sofa_img_2.png" alt="">
+                                <ul class="choose-clr">
+                                    <li><button type="button" style="background: #E5E1DC;"></button></li>
+                                    <li><button type="button" style="background: #A8A49D;"></button></li>
+                                </ul>
+                            </div>
+                            <h5>Victor 3 Seater Sofa</h5>
+                            <p>$1,299</p>
+                        </div>
+                    </div>
+                    <div class="related-product-col">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <button type="button" class="cart-btn">
+                                    <img src="images/cart-icon-gray.svg" alt="">
+                                </button>
+                                <button type="button" class="favr-btn">
+                                    <img src="images/heart-icon-gray.svg" alt="">
+                                </button>
+                                <img src="images/sofa_img_7.png" alt="">
+                                <ul class="choose-clr">
+                                    <li><button type="button" style="background: #E3E0DB;"></button></li>
+                                    <li><button type="button" style="background: #858282;"></button></li>
+                                    <li><button type="button" style="background: #3E3E3E;"></button></li>
+                                </ul>
+                            </div>
+                            <h5>Mossy 2 Seater Sofa</h5>
+                            <p>$1,399</p>
+                        </div>
+                    </div>
+                    <div class="related-product-col">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <button type="button" class="cart-btn">
+                                    <img src="images/cart-icon-gray.svg" alt="">
+                                </button>
+                                <button type="button" class="favr-btn">
+                                    <img src="images/heart-icon-gray.svg" alt="">
+                                </button>
+                                <img src="images/sofa_img_8.png" alt="">
+                                <ul class="choose-clr">
+                                    <li><button type="button" style="background: #E3E0DB;"></button></li>
+                                    <li><button type="button" style="background: #C6B09A;"></button></li>
+                                </ul>
+                            </div>
+                            <h5>Felicity Chair</h5>
+                            <p>$1,599</p>
+                        </div>
+                    </div>
+                    <div class="related-product-col">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <button type="button" class="cart-btn">
+                                    <img src="images/cart-icon-gray.svg" alt="">
+                                </button>
+                                <button type="button" class="favr-btn">
+                                    <img src="images/heart-icon-gray.svg" alt="">
+                                </button>
+                                <img src="images/sofa_img_11.png" alt="">
+                                <ul class="choose-clr">
+                                    <li><button type="button" style="background: #E3E0DB;"></button></li>
+                                    <li><button type="button" style="background: #C6B09A;"></button></li>
+                                </ul>
+                            </div>
+                            <h5>Jamesport 2 Seater Sofa</h5>
+                            <p>$1,599</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stay-in-touch-wrap">
+                <div class="stay-in-touch-content">
+                    <span>PACIFIC F&b</span>
+                    <h2>STAY IN TOUCH</h2>
+                    <p>Sign up to the Pacific F&B Club for the latest design news, styling inspirations, events and
+                        offers.</p>
+                    <form action="">
+                        <label for="">Enter Email:</label>
+                        <input type="email" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <!-- Content End -->
+
+        <!-- Footer Start -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-row">
+                    <div class="footer-col footer-logo-col">
+                        <a href="#" class="footer-logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>About</h5>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Stores</a></li>
+                                <li><a href="#">Product Information</a></li>
+                                <li><a href="#">Catalogue</a></li>
+                                <li><a href="#">Current TV Ads</a></li>
+                                <li><a href="#">Commercial Division</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>Customer Service</h5>
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h5>Extras</h5>
+                            <ul>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>Extras</h5>
+                            <ul>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-social-links">
+                            <a href="#" class="footer-logo">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_youtube.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_instagram.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | Copyright &copy; <a
+                        href="#">Pacific F&B</a> 2023. All Rights Reserved.</p>
+                <p>Design by Xiaoyue Liu, Li Yee Goh</p>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleClass() {
+            document.querySelector('body').classList.toggle('fixed');
+        }
+
+        
+    </script>
+
+</body>
+
+</html>
