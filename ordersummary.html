@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <title>Pacific</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header Start -->
+        <header>
+            <div class="navbar-wrap">
+                <input type="checkbox" class="toggle-btn" onclick="toggleClass()">
+                <button type="buttton" class="menu-btn">
+                    <img src="images/menu-icon.svg" class="menu-img" alt="">
+                    <img src="images/close-icon.svg" class="close-img" alt="">
+                </button>
+                <div class="navbar-nav">
+                    <ul class="navbar">
+                        <li>
+                            <a href="#">FURNITURE</a>
+                            <ul class="submenu">
+                                <li><a href="searchresults.html">Sofas</a></li>
+                                <li><a href="#">Dining</a></li>
+                                <li><a href="#">Chairs</a></li>
+                                <li><a href="#">Living</a></li>
+                                <li><a href="#">Outdoor</a></li>
+                                <li><a href="#">Antiques</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">OFFICE</a>
+                            <ul class="submenu">
+                                <li><a href="#">Conference/Events</a></li>
+                                <li><a href="#">Desks</a></li>
+                                <li><a href="#">Sofas</a></li>
+                                <li><a href="#">Office Chairs</a></li>
+                                <li><a href="#">Tables</a></li>
+                                <li><a href="#">Storage</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">BEDDING</a>
+                            <ul class="submenu">
+                                <li><a href="#">Mattresses & Bases</a></li>
+                                <li><a href="#">Beds</a></li>
+                                <li><a href="#">Kids Beds</a></li>
+                                <li><a href="#">Suits</a></li>
+                                <li><a href="#">Bedroom Furniture</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">HOMEWARES</a>
+                            <ul class="submenu">
+                                <li><a href="#">Cushions</a></li>
+                                <li><a href="#">Bedroom</a></li>
+                                <li><a href="#">Rugs</a></li>
+                                <li><a href="#">Living Room</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SALE</a></li>
+                        <li><a href="#">NEW ARRIVALS</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="user-link">
+                    <img src="images/user-icon.svg" alt="">
+                </a>
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <ul class="links-list">
+                    <li><a href="search.html"><img src="images/search-icon.svg" alt=""></a></li>
+                    <li><a href="#"><img src="images/heart-icon.svg" alt=""></a></li>
+                    <li><a href="shoppingcart.html" class="cart-link"><img src="images/cart-icon.svg" alt=""><span>1</span></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header Start -->
+
+        <!-- Content Start -->
+        <div class="content">
+            <section class="shopping-cart-wrap order-summary">
+                <div class="shopping-cart-heading">
+                    <div class="sc-heading-inner"> <!-- inner heading: order summary -->
+                        <h3>ORDER SUMMARY</h3>
+                        <span>1 ITEM</span>
+                    </div>
+                    <a href="shoppingcart.html"><img src="images/angle-left.svg" alt="">SHOPPING CART</a> <!-- when user clicks on shopping cart button, back to shopping cart page -->
+                </div>
+                <div class="shopping-products-col">
+                    <div class="shopping-product">
+                        <a href="product.html" class="sp-img"> <!-- clicks on product image, back to product page -->
+                            <img src="images/sofa_img_1.png" alt="">
+                        </a>
+                        <div class="sp-content">
+                            <div class="sp-heading">
+                                <a href="product.html">Hugo 3 Seater Lounge</a> <!-- clicks on product name, back to product page -->
+                                <ul>
+                                    <li>
+                                        <button type="button">
+                                            <img src="images/heart-icon-black.svg" alt="">
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="close-btn" onclick="removeCard();"> <!-- when user clicks on close button, the item will disappear -->
+                                            <img src="images/close-icon-s.svg" alt="">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>SAND LEATHER</p>
+                            <h6>$<span class="price">1299</span></h6>
+                            <div class="quantity-btn"> <!-- quantity -->
+                                <input type="button" value="-" id="minus-button" for="quantity">
+                                <input type="number" id="quantity" value="1" min="0">
+                                <input type="button" value="+" id="plus-button" for="quantity">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subtotal-wrap"> <!-- including discount, GST and subtotal -->
+                        <ul>
+                            <li>
+                                <p>DISCOUNT</p>
+                                <span>$0</span>
+                            </li>
+                            <li>
+                                <p>GST</p>
+                                <span>$0</span>
+                            </li>
+                            <li>
+                                <p>SUBTOTAL</p>
+                                <span>$<span class="total">1299</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="how-pay-wrap">
+                        <div class="total-wrap">
+                            <h6>TOTAL</h6>
+                            <h6>$<span class="subtotal">1299</h6>
+                        </div>
+
+                        <div class="how-pay-content"> <!-- payment method including afterpay and humm-->
+                            <ul class="how-pay">
+                                <li><img src="images/icon-afterpay.svg" alt=""><span>4 PAYMENTS 0F $324.75</span></li>
+                                <li><img src="images/icon-humm.svg" alt=""><span>5 PAYMENTS OF $259.80</span></li>
+                            </ul>
+                            <button type="button" id="payment" onclick="payment();">PAYMENT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-detail-col"> <!-- the delivery form start -->
+                    <div class="product-detail">
+                        <h6>PLEASE ENTER YOUR DELIVERY DETAILS:</h6>
+                        <div class="form-group">
+                            <label>EMAIL ADDRESS:</label>
+                            <input type="email" placeholder="EMAIL ADDRESS" required>
+                        </div>
+                        <div class="form-group">
+                            <label>DELIVERY DETAILS:</label>
+                            <input type="text" placeholder="FIRST NAME">
+                            <input type="text" placeholder="LAST NAME">
+                            <input type="number" placeholder="PHONE NUMBER">
+                        </div>
+                        <div class="form-group">
+                            <label>DELIVERY ADDRESS:</label>
+                            <input type="text" placeholder="STREET ADDRESS">
+                            <input type="text" placeholder="COMPANY NAME (OPTIONAL)">
+                            <input type="text" placeholder="SUBURB">
+                            <select name="" id="">
+                                <option value="" selected disabled>REGION/STATE/PROVINCE</option> <!-- state options -->
+                                <option value="">New South Wales</option>
+                                <option value="">Victoria</option>
+                                <option value="">South Australia</option>
+                                <option value="">Northern Territory</option>
+                                <option value="">Western Australia</option>
+                                <option value="">Tasmania</option>
+                                <option value="">Queensland</option>
+                                <option value="">Canberra</option>
+                            </select>
+                            <input type="text" placeholder="POSTCODE">
+                            <select name="" id="">
+                                <option value="" selected disabled>COUNTRY</option> <!-- country options -->
+                                <option value="">Australia</option>
+                                <option value="">China</option>
+                                <option value="">France</option>
+                                <option value="">Malaysia</option>
+                                <option value="">United States</option>
+                                <option value="">United Kingdom</option>
+                                <option value="">Others</option>
+                            </select>
+                        </div> 
+                        <div class="form-group"> <!-- delivery instructions, the text box needs to be bigger -->
+                            <label>DELIVERY INSTRUCTIONS:</label> 
+                            <textarea name="" id="" cols="30" rows="10" placeholder="(OPTIONAL)"></textarea>
+                        </div>
+                    </div> <!-- the delivery form end -->
+                    <div class="subtotal-wrap"> <!-- discount, gst and subtotal -->
+                        <ul>
+                            <li>
+                                <p>DISCOUNT</p>
+                                <span>$0</span>
+                            </li>
+                            <li>
+                                <p>GST</p>
+                                <span>$0</span>
+                            </li>
+                            <li>
+                                <p>SUBTOTAL</p>
+                                <span>$1,299</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="how-pay-wrap">
+                        <div class="total-wrap">
+                            <h6>TOTAL</h6>
+                            <h6>$1,299</h6>
+                        </div>
+
+                        <div class="how-pay-content"> <!-- afterpay and humm -->
+                            <ul class="how-pay">
+                                <li><img src="images/icon-afterpay.svg" alt=""><span>4 PAYMENTS 0F $324.75</span></li>
+                                <li><img src="images/icon-humm.svg" alt=""><span>5 PAYMENTS OF $259.80</span></li>
+                            </ul>
+                            <button type="button" id="payment" onclick="payment();">PAYMENT</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stay-in-touch-wrap">
+                <div class="stay-in-touch-content">
+                    <span>PACIFIC F&b</span>
+                    <h2>STAY IN TOUCH</h2>
+                    <p>Sign up to the Pacific F&B Club for the latest design news, styling inspirations, events and
+                        offers.</p>
+                    <form action="">
+                        <label>Enter Email:</label>
+                        <input type="email" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <!-- Content End -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-row">
+                    <div class="footer-col footer-logo-col">
+                        <a href="#" class="footer-logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>About</h5>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Stores</a></li>
+                                <li><a href="#">Product Information</a></li>
+                                <li><a href="#">Catalogue</a></li>
+                                <li><a href="#">Current TV Ads</a></li>
+                                <li><a href="#">Commercial Division</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>Customer Service</h5>
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h5>Extras</h5>
+                            <ul>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>Extras</h5>
+                            <ul>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-social-links">
+                            <a href="#" class="footer-logo">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_youtube.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_instagram.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | Copyright &copy; <a
+                        href="#">Pacific F&B</a> 2023. All Rights Reserved.</p>
+                <p>Design by Xiaoyue Liu, Li Yee Goh</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
