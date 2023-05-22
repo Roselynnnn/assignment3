@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <title>Pacific</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header Start -->
+        <header>
+            <div class="navbar-wrap">
+                <input type="checkbox" class="toggle-btn" onclick="toggleClass()">
+                <button type="buttton" class="menu-btn">
+                    <img src="images/menu-icon.svg" class="menu-img" alt="">
+                    <img src="images/close-icon.svg" class="close-img" alt="">
+                </button>
+                <div class="navbar-nav">
+                    <ul class="navbar">
+                        <li>
+                            <a href="#">FURNITURE</a>
+                            <ul class="submenu">
+                                <li><a href="searchresults.html">Sofas</a></li>
+                                <li><a href="#">Dining</a></li>
+                                <li><a href="#">Chairs</a></li>
+                                <li><a href="#">Living</a></li>
+                                <li><a href="#">Outdoor</a></li>
+                                <li><a href="#">Antiques</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">OFFICE</a>
+                            <ul class="submenu">
+                                <li><a href="#">Conference/Events</a></li>
+                                <li><a href="#">Desks</a></li>
+                                <li><a href="#">Sofas</a></li>
+                                <li><a href="#">Office Chairs</a></li>
+                                <li><a href="#">Tables</a></li>
+                                <li><a href="#">Storage</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">BEDDING</a>
+                            <ul class="submenu">
+                                <li><a href="#">Mattresses & Bases</a></li>
+                                <li><a href="#">Beds</a></li>
+                                <li><a href="#">Kids Beds</a></li>
+                                <li><a href="#">Suits</a></li>
+                                <li><a href="#">Bedroom Furniture</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">HOMEWARES</a>
+                            <ul class="submenu">
+                                <li><a href="#">Cushions</a></li>
+                                <li><a href="#">Bedroom</a></li>
+                                <li><a href="#">Rugs</a></li>
+                                <li><a href="#">Living Room</a></li>
+                                <li><a href="#">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">SALE</a></li>
+                        <li><a href="#">NEW ARRIVALS</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="user-link">
+                    <img src="images/user-icon.svg" alt="">
+                </a>
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo.png" alt="">
+                </a>
+                <ul class="links-list">
+                    <li><a href="search.html"><img src="images/search-icon.svg" alt=""></a></li>
+                    <li><a href="#"><img src="images/heart-icon.svg" alt=""></a></li>
+                    <li><a href="shopping-cart.html" class="cart-link"><img src="images/cart-icon.svg" alt=""><span>1</span></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Content Start -->
+        <div class="content">
+            <section class="shopping-cart-wrap order-confirmation">
+                <div class="shopping-cart-heading">
+                    <div class="sc-heading-inner">
+                        <h3>order confirmation #A47920</h3>
+                        <span>1 ITEM</span>
+                        <p>You have successfully placed an order ! </p>
+                    </div>
+                </div>
+                <div class="shopping-products-col">
+                    <div class="shopping-product">
+                        <a href="product.html" class="sp-img">
+                            <img src="images/sofa_img_1.png" alt="">
+                        </a>
+                        <div class="sp-content">
+                            <div class="sp-heading">
+                                <a href="product.html">Hugo 3 Seater Lounge</a>
+                                <ul>
+                                    <li>
+                                        <button type="button">
+                                            <img src="images/heart-icon-black.svg" alt="">
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button">
+                                            <img src="images/close-icon-s.svg" alt="">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>SAND LEATHER</p>
+                            <h6>$1,299</h6>
+                            <div class="quantity-btn">
+                                <button type="button" id="sub" class="minus">
+                                    <img src="images/minus-icon.svg" alt="">
+                                </button>
+                                <input type="number" id="1" value="1" min="1" id="quantity" max="10">
+                                <button type="button" id="add" class="plus">
+                                    <img src="images/plus-icon.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="how-pay-wrap">
+                        <div class="total-wrap">
+                            <h6>ORDER TOTAL</h6>
+                            <h6>$1,449</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-detail-col">
+                    <div class="confirmation-msg">
+                        <p>An order confirmation will be sent to your email, make sure to check your inbox.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stay-in-touch-wrap">
+                <div class="stay-in-touch-content">
+                    <span>PACIFIC F&b</span>
+                    <h2>STAY IN TOUCH</h2>
+                    <p>Sign up to the Pacific F&B Club for the latest design news, styling inspirations, events and
+                        offers.</p>
+                    <form action="">
+                        <label>Enter Email:</label>
+                        <input type="email" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <!-- Content End -->
+
+        <!-- Footer Start -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-row">
+                    <div class="footer-col footer-logo-col">
+                        <a href="#" class="footer-logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>About</h5>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Stores</a></li>
+                                <li><a href="#">Product Information</a></li>
+                                <li><a href="#">Catalogue</a></li>
+                                <li><a href="#">Current TV Ads</a></li>
+                                <li><a href="#">Commercial Division</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>Customer Service</h5>
+                            <ul>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Site Map</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h5>Extras</h5>
+                            <ul>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-links">
+                            <h5>Extras</h5>
+                            <ul>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-social-links">
+                            <a href="#" class="footer-logo">
+                                <img src="images/logo.png" alt="">
+                            </a>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_facebook.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_twitter.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_youtube.svg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/icon_instagram.svg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | Copyright &copy; <a
+                        href="#">Pacific F&B</a> 2023. All Rights Reserved.</p>
+                <p>Design by Xiaoyue Liu, Li Yee Goh</p>
+            </div>
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
