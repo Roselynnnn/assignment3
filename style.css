@@ -2146,6 +2146,7 @@ footer .footer-copyright p a:hover {
     min-height: 61px;
 }
 
+/* Styling for the heading text in the shopping cart section */
 .shopping-cart-heading .sc-heading-inner h3 {
     font-weight: 500;
     font-size: 32px;
@@ -2155,6 +2156,7 @@ footer .footer-copyright p a:hover {
     color: #2C2B2A;
 }
 
+/* Styling for additional information in the shopping cart heading */
 .shopping-cart-heading .sc-heading-inner span {
     margin-top: 9px;
     font-weight: 400;
