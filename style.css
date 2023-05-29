@@ -2210,6 +2210,7 @@ footer .footer-copyright p a:hover {
     border-bottom: 0.8px solid rgba(223, 222, 218, 0.77);
 }
 
+/* Styling for the product image container */
 .shopping-product .sp-img {
     width: 41.8%;
     background: #F8F7F6;
@@ -2320,6 +2321,7 @@ footer .footer-copyright p a:hover {
     right: 0;
 }
 
+/* defines the styling for quantity buttons within an element with the class .sp-content */
 .sp-content .quantity-btn button,
 .sp-content .quantity-btn #minus-button,
 .sp-content .quantity-btn #plus-button {
@@ -2544,6 +2546,7 @@ footer .footer-copyright p a:hover {
     display: none;
 }
 /*-_-_Order-Summary-Page_CSS_End_-_-*/
+
 
 /*-_-_Shopping-Cart-Page_CSS_Start_-_-*/
 .shopping-cart .product-detail-col .product-detail {
