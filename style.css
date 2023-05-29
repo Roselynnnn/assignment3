@@ -2710,6 +2710,8 @@ footer .footer-copyright p a:hover {
 /*-_-_Payment-Page_CSS_End_-_-*/
 
 /*-_-_Responsiveness_-_-*/
+/* Below code contains media queries for screens with a maximum width of 1800 pixels. 
+adjusting the styling of various elements to ensure optimal display on this size screens.*/
 @media only screen and (max-width: 1800px) {
     /*-_-_Search-Page_CSS_Start_-_-*/
     .popular-product-row .popular-product-col {
@@ -2731,6 +2733,8 @@ footer .footer-copyright p a:hover {
     /*-_-_Search-Page_CSS_End_-_-*/
 }
 
+/* Below code contains media queries for screens with a maximum width of 1367 pixels. 
+adjusting the styling of various elements to ensure optimal display on smaller screens.*/
 @media only screen and (max-width: 1367px) {
     /*-_-_Search-Page_CSS_Start_-_-*/
     .search-category-wrap .top-category {
@@ -2881,6 +2885,8 @@ footer .footer-copyright p a:hover {
     /*-_-_Order-Confirmation-Page_CSS_End_-_-*/
 }
 
+/* Below code contains media queries for screens with a maximum width of 1199 pixels. 
+adjusting the styling of various elements to ensure optimal display on smaller screens.*/
 @media only screen and (max-width: 1199px) {
     header {
         margin-bottom: 60px;
