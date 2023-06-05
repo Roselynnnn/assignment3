@@ -109,6 +109,7 @@ function openCity(evt, productImg) {
     evt.currentTarget.className += " active";
 }
 
+// Function for product page accordion items
 const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 accordionItemHeaders.forEach(accordionItemHeader => {
     accordionItemHeader.addEventListener("click", event => {
